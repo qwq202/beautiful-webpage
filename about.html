@@ -3,19 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <style>
-        body {
-            background: linear-gradient(45deg, #4ecdc4, #ff6b6b);
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-    </style>
+    <title>About | Beautiful Webpage</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>About This Website</h1>
-    <p>This is the about page with additional content and images.</p>
-    <img src="https://via.placeholder.com/200" alt="About Image">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Beautiful Webpage</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero about-hero">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our journey and what drives us.</p>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-intro">
+                <h2>Our Story</h2>
+                <p>We are a passionate team dedicated to creating beautiful and functional websites. Our journey began in 2023, and since then, we've helped countless clients bring their ideas to life.</p>
+            </div>
+
+            <div class="timeline">
+                <h2>Timeline</h2>
+                <div class="timeline-item">
+                    <h3>2023</h3>
+                    <p>Founded with a vision to revolutionize web design.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024</h3>
+                    <p>Launched our first major project, gaining recognition in the industry.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Future</h3>
+                    <p>Continuing to innovate and inspire.</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>Our Skills</h2>
+                <div class="skill-item">
+                    <h3>Web Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Development</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Creativity</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Beautiful Webpage. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
