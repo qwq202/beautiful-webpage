@@ -1,59 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美观的网页</title>
+    <title>Beautiful Webpage</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: #fff;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            font-family: Arial, sans-serif;
+            color: white;
             text-align: center;
         }
-        header {
-            padding: 50px;
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        .container {
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff6b6b;
+            transition: color 0.3s;
+        }
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         button {
-            background-color: #fff;
-            color: #333;
+            background: white;
+            color: #ff6b6b;
             border: none;
             padding: 10px 20px;
-            font-size: 1em;
-            border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s;
         }
         button:hover {
-            background-color: #ddd;
+            background: #ff6b6b;
+            color: white;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
         }
     </style>
+    <script>
+        // Simple interaction: Alert on button click
+        function handleClick() {
+            alert('Button clicked! Welcome to the interactive page.');
+        }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>欢迎来到我的网页</h1>
-            <p>这是一个托管在 GitHub Pages 上的美观网页示例。希望您喜欢这个设计！</p>
-            <button onclick="alert('感谢访问！')">点击我</button>
-        </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Welcome to My Beautiful Webpage</h1>
+        <p>This is an enhanced webpage with added elements. Explore the navigation and interact with the button!</p>
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image" style="max-width: 100%;">
+        <p>Additional text: This section includes more content for better user experience.</p>
+        <button onclick="handleClick()">Click Me!</button>
     </div>
 </body>
 </html>
