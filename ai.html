@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 体验 | AI 演示网站</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AI 演示网站</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="ai.html" class="active">AI 体验</a></li>
+                <li><a href="models.html">模型介绍</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="height:auto; padding:4rem 2rem;">
+            <h1>在线 AI 聊天</h1>
+            <p>输入你的问题，体验 OpenAI 模型的回答。</p>
+            <div style="margin-top:2rem; width:100%; max-width:600px;">
+                <input type="text" id="apiKey" placeholder="在此输入你的 API Key" style="width:100%; padding:0.5rem; margin-bottom:1rem;">
+                <textarea id="userInput" rows="4" placeholder="请输入内容..." style="width:100%; padding:0.5rem;"></textarea>
+                <button class="cta-button" id="sendBtn" style="margin-top:1rem;">发送</button>
+                <pre id="response" style="white-space:pre-wrap; margin-top:1rem;"></pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AI 演示网站，保留所有权利。</p>
+    </footer>
+    <script src="ai.js"></script>
+</body>
+</html>
+
